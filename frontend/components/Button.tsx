@@ -30,7 +30,7 @@ const Button: React.FC<ButtonProps> = ({label, secondary, fullWidth, large, onCl
             ${large ? 'py-3' : 'py-2'}
             ${outline ? 'bg-transparent' : ''}
             ${outline ? 'border-white' : ''}
-            ${outline ? 'text-white' : ''}
+            ${outline ? '' : 'text-black'}
         `}
     >{label}</button>
   )

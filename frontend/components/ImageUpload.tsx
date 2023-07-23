@@ -45,7 +45,7 @@ const ImageUpload: React.FC<DropzoneProps> = ({ onChange, label, value, disabled
             src={base64}
             height="100"
             width="100"
-            alt="Uploaded image"
+            alt="Imagen"
           />
         </div>
       ) : (

@@ -42,7 +42,7 @@ const LoginModal = () => {
     const bodyContent = (
         <div className="flex flex-col gap-4">
             <Input placeholder="Email" onChange={(e) => setEmail(e.target.value)} value={email} disabled={isLoading} />
-            <Input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} value={password} disabled={isLoading} />
+            <Input type="password" placeholder="Contraseña" onChange={(e) => setPassword(e.target.value)} value={password} disabled={isLoading} />
         </div>
     )
 
@@ -51,7 +51,7 @@ const LoginModal = () => {
     )
 
     return (
-        <Modal title="Login" disabled={isLoading} isOpen={loginModal.isOpen} actionLabel="Sign In" onClose={loginModal.onClose} onSubmit={onSubmit} body={bodyContent} footer={footerContent} />
+        <Modal title="Iniciar sesion" disabled={isLoading} isOpen={loginModal.isOpen} actionLabel="Sign In" onClose={loginModal.onClose} onSubmit={onSubmit} body={bodyContent} footer={footerContent} />
     )
 }
 

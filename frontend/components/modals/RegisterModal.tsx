@@ -65,7 +65,7 @@ const RegisterModal = () => {
     )
 
     return (
-        <Modal title="Crear cuenta" disabled={isLoading} isOpen={registerModal.isOpen} actionLabel="Sign In" onClose={registerModal.onClose} onSubmit={onSubmit} body={bodyContent} footer={footerContent} />
+        <Modal title="Crear cuenta" disabled={isLoading} isOpen={registerModal.isOpen} actionLabel="Crear cuenta" onClose={registerModal.onClose} onSubmit={onSubmit} body={bodyContent} footer={footerContent} />
     )
 }
 

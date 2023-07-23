@@ -5,7 +5,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  //console.log('llamaron por api a current');
   if (req.method !== "GET") {
     return res.status(405).end();
   }
@@ -15,11 +14,10 @@ export default async function handler(
     
     const {currentUser} = await serverAuth(req, res);
 
-    //console.log('algo que hace el currentuser', currentUser);
     
     return res.status(200).json(currentUser);
   } catch (error) {
-    console.log("error current", error);
+    console.log("[current] Error", error);
 
     return res.status(400).end();
   }
